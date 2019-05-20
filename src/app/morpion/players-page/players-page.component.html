@@ -1,0 +1,14 @@
+<!-- <p>
+  Players entries
+</p> -->
+
+<div>
+
+  <ul>
+    <li>Player 1: <input placholder="name"/><button (click)="onPlayerClicked(1)"> OK </button></li>
+    <li *ngIf="player1Ready">Player 2: <input placholder="name"/><button (click)="onPlayerClicked(2)"> OK </button></li>
+  </ul>
+
+  <button *ngIf="allPlayersOk" [routerLink]="['/morpion']"> LET'S PLAY !!!</button>
+
+</div>
